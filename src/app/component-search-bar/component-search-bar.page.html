@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-buttons>
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-toolbar>
+        <ion-title>SearchBar</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-searchbar [(ngModel)]="nome" (ionInput)="filtarItens()"></ion-searchbar>
+    <ion-list>
+        <ion-item *ngFor="let pessoa of pessoasFiltradas">
+            {{pessoa.nome}}
+        </ion-item>
+    </ion-list>
+
+    <!-- com valor e color -->
+    <ion-searchbar color="success" mode="md" value="teste"></ion-searchbar>
+
+    <ion-searchbar color="success" type="tel" value="teste"></ion-searchbar>
+    <!-- com opçao de cancelamento -->
+    <ion-searchbar showCancelButton cancelButtonText="Cancelar"></ion-searchbar>
+
+    <ion-searchbar animated placeholder="Buscar"></ion-searchbar>
+
+
+
+
+</ion-content>

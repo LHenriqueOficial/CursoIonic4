@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-buttons>
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-toolbar>
+        <ion-title>Refresher</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-refresher slot="fixed" (ionRefresh)="atualizandoMensagem($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="puxe mais uma vez " refreshingSpinner="circles" refreshingText="atualizando">
+
+        </ion-refresher-content>
+
+    </ion-refresher>
+
+    <h2>Curso Ionic</h2>
+    {{message}}
+</ion-content>
