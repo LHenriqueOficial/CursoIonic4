@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start"></ion-buttons>
+        <ion-back-button></ion-back-button>
+        <ion-title>Radio</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-radio-group>
+            <ion-list-header>
+                <ion-label>Frutas</ion-label>
+            </ion-list-header>
+            <ion-item>
+                <ion-label>Abacate</ion-label>
+                <ion-radio value="abacate"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Maça</ion-label>
+                <ion-radio value="maça"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Morango</ion-label>
+                <ion-radio value="morango"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-list>
+
+
+    <ion-list>
+        <ion-radio-group>
+            <ion-list-header>
+                <ion-label>Opções </ion-label>
+            </ion-list-header>
+            <ion-item>
+                <ion-label>Abacate</ion-label>
+                <ion-radio default></ion-radio>
+            </ion-item>
+            <ion-item mode="ios">
+                <ion-label>checked</ion-label>
+                <ion-radio checked color="danger"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>disabled</ion-label>
+                <ion-radio disabled="true"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-list>
+
+</ion-content>

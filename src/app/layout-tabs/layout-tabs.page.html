@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot='end'>
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Layout - Tabs</ion-title>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="schedule">
+                <ion-icon name="calendar" badge color='warning'></ion-icon>
+                <ion-label>Schedule</ion-label>
+                <ion-badge>6</ion-badge>
+            </ion-tab-button>
+
+            <ion-tab-button tab="speakers">
+                <ion-icon name="contacts" badge color='dark'></ion-icon>
+                <ion-label>Speakers</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="map">
+                <ion-icon name="map" badge color="danger"></ion-icon>
+                <ion-label>Map</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="about">
+                <ion-icon name="information-circle" badge color="tertiary"></ion-icon>
+                <ion-label>Sobre</ion-label>
+
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
+</ion-content>

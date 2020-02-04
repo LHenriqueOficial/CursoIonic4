@@ -16,12 +16,20 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+  {
+    title:'Instalacao',
+    url: '/instalacao',
+    icon:'logo-codepen'
+  },
+  {
+    title:'Layout',
+    url:'/layout',
+    icon:'md-grid'
+  },
+  {
+  title:'Components', url:'/component', icon:'logo-slack'}
   ];
+
 
   constructor(
     private platform: Platform,
